@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => {
   return (
-    <div>
-      <p>this is the venue</p>
+		<div>
+      <h1>Chris and Monika</h1>
     </div>
   );
 };

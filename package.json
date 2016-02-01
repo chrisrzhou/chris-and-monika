@@ -1,10 +1,10 @@
 {
-  "name": "wedding",
+  "name": "chris-and-monika",
   "version": "1.0.0",
-  "description": "Chris + Monika's wedding!",
+  "description": "Chris and Monika's wedding!",
   "main": "lib/index.js",
   "license": "MIT",
-  "repository": "https://github.com/chrisrzhou/wedding",
+  "repository": "https://github.com/chrisrzhou/chris-and-monika",
   "scripts": {
     "dev": "node server.js",
     "clean": "rm -rf dist",
@@ -14,7 +14,7 @@
   "author": {
     "name": "Chris Zhou",
     "email": "christopher.r.zhou@gmail.com",
-    "url": "https://github.com/chrisrzhou/wedding"
+    "url": "https://github.com/chrisrzhou/chris-and-monika"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -23,7 +23,9 @@
     "redux",
     "react",
     "mongodb",
-    "wedding"
+    "wedding",
+    "chrisrzhou",
+    "monikasun88"
   ],
   "devDependencies": {
     "babel": "^6.3.26",
@@ -40,14 +42,18 @@
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-react": "^3.13.1",
     "express": "^4.13.3",
+    "file-loader": "^0.8.5",
     "less": "^2.6.0",
     "less-loader": "^2.2.2",
     "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
   },
   "dependencies": {
+    "font-awesome": "^4.5.0",
+    "font-awesome-webpack": "0.0.4",
     "history": "^1.17.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",

@@ -7,17 +7,17 @@ import './../shared/shared.less';
 export default () => {
   return (
 		<div className="container">
-      <h1>About Us</h1>
+      <h1>The Wedding</h1>
       <Section>
-        <h2>How We Met</h2>
+        <h2>Event Schedule</h2>
         <LoremIpsum />
       </Section>
       <Section>
-        <h2>Proposal</h2>
+        <h2>Directions</h2>
         <LoremIpsum />
       </Section>
       <Section>
-        <h2>The Future</h2>
+        <h2>About Rengstorff House</h2>
         <LoremIpsum />
       </Section>
     </div>

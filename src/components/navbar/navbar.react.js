@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 import './navbar.less';
 
 export default () => {
@@ -6,28 +8,18 @@ export default () => {
 		<nav role="navigation">
 			<ul>
 				<li>
-					<a href="#wedding">The Wedding</a>
+					<Link to="/">Home</Link>
 				</li>
 				<li>
-					<a href="#reception">Reception</a>
+					<Link to="about-us">About Us</Link>
 				</li>
 				<li>
-					<a href="#registry">Registry</a>
+					<Link to="wedding">Wedding</Link>
 				</li>
 				<li>
-					<a href="#directions">Directions</a>
-				</li>
-				<li>
-					<a href="#bparty">Bridal Party</a>
+					<Link to="rsvp">RSVP</Link>
 				</li>
 			</ul>
-			<div className="menu">
-				<a className="menu__icon" href="#" title="Menu">
-					<span className="line line-1"></span>
-					<span className="line line-2"></span>
-					<span className="line line-3"></span>
-				</a>
-			</div>
 		</nav>
   );
 };

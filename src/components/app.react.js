@@ -8,7 +8,9 @@ const App = (props) => {
   return (
     <div>
       <Navbar />
-      {props.children}
+      <div className="main">
+        {props.children}
+      </div>
       <Footer />
     </div>
   );

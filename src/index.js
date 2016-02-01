@@ -8,7 +8,7 @@ import createStore from './store';
 import AppContainer from './containers/app.container.react';
 import About from './components/about/about.react';
 import Home from './components/home/home.react';
-import Venue from './components/venue/venue.react';
+import Wedding from './components/wedding/wedding.react';
 import RSVP from './components/rsvp/rsvp.react';
 
 const history = createHistory();
@@ -18,8 +18,8 @@ const routes = (
   <Router>
     <Route path="/" component={AppContainer}>
       <IndexRoute component={Home} />
-      <Route path="about" component={About} />
-      <Route path="venue" component={Venue} />
+      <Route path="about-us" component={About} />
+      <Route path="wedding" component={Wedding} />
       <Route path="rsvp" component={RSVP} />
     </Route>
   </Router>

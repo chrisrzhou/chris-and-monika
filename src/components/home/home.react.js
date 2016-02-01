@@ -1,23 +1,38 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
+
+import HomeHero from './home-hero.react';
+import LoremIpsum from './../shared/lorem-ipsum.react';
+import Section from './../shared/section.react';
+import './home.less';
 import './../shared/shared.less';
 
 export default () => {
   return (
 		<div>
       <Parallax bgImage="http://pics4.city-data.com/cpicc/cfiles42452.jpg">
-        <div className="container parallax">
-          <p>Man's gotta know his limitations. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. well, do you have anything to say for yourself? here. put that in your report!" and "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. man's gotta know his limitations. here. put that in your report!" and "i may have found a way out of here. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? don't p!ss down my back and tell me it's raining. dyin' ain't much of a livin', boy. This is my gun, clyde! here. put that in your report!" and "i may have found a way out of here. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. man's gotta know his limitations. don't p!ss down my back and tell me it's raining. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? dyin' ain't much of a livin', boy. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is my gun, clyde! this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it.</p>
+        <HomeHero />
+        <div className="parallax-content-left">
+          <Section>
+            <h2>Welcome</h2>
+            <LoremIpsum />
+          </Section>
         </div>
       </Parallax>
       <Parallax bgImage="http://pics4.city-data.com/cpicc/cfiles42452.jpg">
-        <div className="container parallax">
-          <p>Man's gotta know his limitations. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. well, do you have anything to say for yourself? here. put that in your report!" and "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. man's gotta know his limitations. here. put that in your report!" and "i may have found a way out of here. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? don't p!ss down my back and tell me it's raining. dyin' ain't much of a livin', boy. This is my gun, clyde! here. put that in your report!" and "i may have found a way out of here. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. man's gotta know his limitations. don't p!ss down my back and tell me it's raining. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? dyin' ain't much of a livin', boy. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is my gun, clyde! this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it.</p>
+        <div className="parallax-content-right">
+          <Section>
+            <h2>Venue</h2>
+            <LoremIpsum />
+          </Section>
         </div>
       </Parallax>
       <Parallax bgImage="http://pics4.city-data.com/cpicc/cfiles42452.jpg">
-        <div className="container parallax">
-          <p>Man's gotta know his limitations. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. well, do you have anything to say for yourself? here. put that in your report!" and "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. man's gotta know his limitations. here. put that in your report!" and "i may have found a way out of here. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? don't p!ss down my back and tell me it's raining. dyin' ain't much of a livin', boy. This is my gun, clyde! here. put that in your report!" and "i may have found a way out of here. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. man's gotta know his limitations. don't p!ss down my back and tell me it's raining. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. here. put that in your report!" and "i may have found a way out of here. what you have to ask yourself is, do i feel lucky. well do ya' punk? dyin' ain't much of a livin', boy. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is my gun, clyde! this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it.</p>
+        <div className="parallax-content-left">
+          <Section>
+            <h2>RSVP</h2>
+            <LoremIpsum />
+          </Section>
         </div>
       </Parallax>
     </div>
