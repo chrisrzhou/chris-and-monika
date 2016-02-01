@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
 
-import Navbar from './navbar/navbar.react';
 import Footer from './footer/footer.react';
+import Navbar from './navbar/navbar.react';
+import './app.less';
 
-const Main = (props) => {
+const App = (props) => {
   return (
     <div>
       <Navbar />
@@ -13,8 +14,8 @@ const Main = (props) => {
   );
 };
 
-Main.propTypes = {
+App.propTypes = {
   children: PropTypes.any.isRequired,
 };
 
-export default Main;
+export default App;

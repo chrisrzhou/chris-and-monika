@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": "https://github.com/chrisrzhou/wedding",
   "scripts": {
-    "start": "node server.js",
-    "clean": "rimraf lib dist coverage",
+    "dev": "node server.js",
+    "clean": "rm -rf dist",
     "lint": "eslint src test",
-    "build": "NODE_ENV=production webpack src/index.js --config webpack.config.production.js"
+    "build": "npm run clean && NODE_ENV=production webpack src/index.js --config webpack.config.production.js && cp index.html dist"
   },
   "author": {
     "name": "Chris Zhou",
@@ -35,19 +35,14 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.1",
     "babel-preset-stage-0": "^6.3.13",
-    "chai": "^3.3.0",
+    "css-loader": "^0.23.1",
     "eslint": "^1.6.0",
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-react": "^3.13.1",
     "express": "^4.13.3",
-    "isparta": "^4.0.0",
-    "jsdom": "^7.2.2",
-    "mocha": "^2.2.5",
-    "react-addons-test-utils": "^0.14.0",
-    "redux-devtools": "^3.0.1",
-    "redux-devtools-log-monitor": "^1.0.1",
-    "rimraf": "^2.5.0",
-    "sinon": "^1.17.1",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
@@ -56,11 +51,10 @@
     "history": "^1.17.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-parallax": "^0.3.2",
     "react-redux": "^4.0.5",
     "react-router": "^1.0.3",
     "redux": "^3.0.2",
-    "redux-logger": "^2.3.1",
-    "redux-promise": "^0.5.0",
     "redux-thunk": "^1.0.0"
   }
 }
