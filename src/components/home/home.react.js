@@ -10,8 +10,8 @@ import './../shared/shared.less';
 export default () => {
   return (
 		<div>
+      <HomeHero />
       <Parallax bgImage="http://pics4.city-data.com/cpicc/cfiles42452.jpg">
-        <HomeHero />
         <div className="parallax-content-left">
           <Section>
             <h2>Welcome</h2>
