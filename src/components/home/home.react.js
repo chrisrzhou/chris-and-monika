@@ -1,14 +1,15 @@
 import React from 'react';
 
+import Anchor from './../shared/anchor.react';
 import HomeHero from './home-hero.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 import './home.less';
-import './../shared/shared.less';
 
 const Home = () => {
   return (
-		<div>
+		<div className="container">
+      <Anchor id="home" />
       <HomeHero />
       <div className="parallax-content-left">
         <Section>

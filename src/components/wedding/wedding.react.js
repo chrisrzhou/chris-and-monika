@@ -1,12 +1,13 @@
 import React from 'react';
 
-import LoremIpsum from './../shared/lorem-ipsum.react.js';
-import Section from './../shared/section.react.js';
-import './../shared/shared.less';
+import Anchor from './../shared/anchor.react';
+import LoremIpsum from './../shared/lorem-ipsum.react';
+import Section from './../shared/section.react';
 
 const Wedding = () => {
   return (
 		<div className="container">
+      <Anchor id="wedding" />
       <h1>The Wedding</h1>
       <Section>
         <h2>Event Schedule</h2>

@@ -1,12 +1,14 @@
 import React from 'react';
 
-import LoremIpsum from './../shared/lorem-ipsum.react.js';
-import Section from './../shared/section.react.js';
+import Anchor from './../shared/anchor.react';
+import LoremIpsum from './../shared/lorem-ipsum.react';
+import Section from './../shared/section.react';
 import './../shared/shared.less';
 
 export default () => {
   return (
 		<div className="container">
+      <Anchor id="about" />
       <h1>About Us</h1>
       <Section>
         <h2>How We Met</h2>

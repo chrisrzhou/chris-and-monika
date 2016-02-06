@@ -1,12 +1,13 @@
 import React from 'react';
 
-import LoremIpsum from './../shared/lorem-ipsum.react.js';
-import Section from './../shared/section.react.js';
-import './../shared/shared.less';
+import Anchor from './../shared/anchor.react';
+import LoremIpsum from './../shared/lorem-ipsum.react';
+import Section from './../shared/section.react';
 
 const RSVP = () => {
   return (
 		<div className="container">
+      <Anchor id="rsvp" />
       <h1>RSVP Now</h1>
       <Section>
         <h2>Form</h2>

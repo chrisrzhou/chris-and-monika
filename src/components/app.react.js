@@ -8,19 +8,23 @@ import RSVP from './rsvp/rsvp.react';
 import Wedding from './wedding/wedding.react';
 import './app.less';
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <div className="main">
-        <Home />
-        <About />
-        <Wedding />
-        <RSVP />
+const { Component } = React;
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+          <div className="main">
+            <Home />
+            <About />
+            <Wedding />
+            <RSVP />
+          </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default App;

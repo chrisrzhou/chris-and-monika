@@ -4,22 +4,22 @@ import './navbar.less';
 
 const Navbar = () => {
   return (
-		<nav role="navigation">
-			<ul>
-				<li>
-          <a href="#">Home</a>
-				</li>
-				<li>
-          <a href="#">About Us</a>
-				</li>
-				<li>
-          <a href="#">Wedding</a>
-				</li>
-				<li>
-          <a href="#">RSVP</a>
-				</li>
-			</ul>
-		</nav>
+    <nav role="navigation">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+        <li>
+          <a href="#wedding">Wedding</a>
+        </li>
+        <li>
+          <a href="#rsvp">RSVP</a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
