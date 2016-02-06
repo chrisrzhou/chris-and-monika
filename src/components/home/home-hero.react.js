@@ -2,7 +2,7 @@ import React from 'react';
 
 import './home.less';
 
-export default () => {
+const HomeHero = () => {
   return (
 		<div className="home-hero">
       <h1>Chris and Monika</h1>
@@ -10,3 +10,5 @@ export default () => {
     </div>
   );
 };
+
+export default HomeHero;

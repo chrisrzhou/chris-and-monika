@@ -1,25 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import './navbar.less';
 
-export default () => {
+const Navbar = () => {
   return (
 		<nav role="navigation">
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+          <a href="#">Home</a>
 				</li>
 				<li>
-					<Link to="about-us">About Us</Link>
+          <a href="#">About Us</a>
 				</li>
 				<li>
-					<Link to="wedding">Wedding</Link>
+          <a href="#">Wedding</a>
 				</li>
 				<li>
-					<Link to="rsvp">RSVP</Link>
+          <a href="#">RSVP</a>
 				</li>
 			</ul>
 		</nav>
   );
 };
+
+export default Navbar;

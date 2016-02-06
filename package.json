@@ -54,14 +54,10 @@
   "dependencies": {
     "font-awesome": "^4.5.0",
     "font-awesome-webpack": "0.0.4",
-    "history": "^1.17.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-forms": "^0.5.7",
-    "react-parallax": "^0.3.2",
     "react-redux": "^4.0.5",
-    "react-router": "^1.0.3",
     "redux": "^3.0.2",
-    "redux-thunk": "^1.0.0"
+    "redux-thunk": "^1.0.3"
   }
 }

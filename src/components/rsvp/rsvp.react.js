@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import LoremIpsum from './../shared/lorem-ipsum.react.js';
 import Section from './../shared/section.react.js';
 import './../shared/shared.less';
 
-export default () => {
+const RSVP = () => {
   return (
 		<div className="container">
       <h1>RSVP Now</h1>
@@ -16,14 +15,16 @@ export default () => {
       <Section>
         <h2>Contact Us</h2>
         {'Email either '}
-        <Link to="mailto:christopher.r.zhou@gmail.com" target="_top">
+        <a href="mailto:christopher.r.zhou@gmail.com" target="_top">
           Chris
-        </Link>
+        </a>
         {' or '}
-        <Link to="mailto:monikasun88@gmail.com" target="_top">
+        <a href="mailto:monikasun88@gmail.com" target="_top">
           Monika
-        </Link>
+        </a>
       </Section>
     </div>
   );
 };
+
+export default RSVP;

@@ -4,7 +4,7 @@ import LoremIpsum from './../shared/lorem-ipsum.react.js';
 import Section from './../shared/section.react.js';
 import './../shared/shared.less';
 
-export default () => {
+const Wedding = () => {
   return (
 		<div className="container">
       <h1>The Wedding</h1>
@@ -23,3 +23,5 @@ export default () => {
     </div>
   );
 };
+
+export default Wedding;
