@@ -1,27 +1,27 @@
+/* import fonts and other less files */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
-@import './shared/variables.less';
+@import './variables.less';
+@import './shared.less';
+@import './navbar.less';
+@import './footer.less';
+@import './home.less';
 
 html, body {
-  color: @color-text;
+  color: @text-color;
   font: 1.0em 'Open Sans';
   margin: 0 auto;
   padding: 0;
 };
 
-a {
+a, .fa {
   color: @color-primary;
   text-decoration: none;
 
   &:hover {
     color: @color-primary-dark;
-    text-decoration: underline;
   }
-}
-
-p {
-  padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,15 +39,10 @@ h3 {
   font-size: 1.2em;
 }
 
-.fa {
-  color: @color-primary;
-
-  &:hover {
-    color: @color-primary-dark;
-  }
-}
-
 .main {
+  background-color: @color-primary-light;
+  margin: 0 auto;
   margin-top: @navbar-height;
-  min-height: 100vh;
+  max-width: @main-width;
+  padding: @main-padding;
 }

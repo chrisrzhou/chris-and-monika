@@ -3,7 +3,6 @@ import React from 'react';
 import Anchor from './../shared/anchor.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
-import './../shared/shared.less';
 
 export default () => {
   return (

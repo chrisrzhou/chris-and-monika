@@ -1,8 +1,6 @@
 import React from 'react';
 import 'font-awesome-webpack';
 
-import './footer.less';
-
 const Footer = () => {
   return (
     <footer className="footer">

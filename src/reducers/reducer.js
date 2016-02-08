@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import rsvp from './rsvp';
+import app from './app';
 
 export default combineReducers({
-  rsvp,
+  app,
 });

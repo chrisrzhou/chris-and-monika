@@ -6,25 +6,21 @@ import Home from './home/home.react';
 import Navbar from './navbar/navbar.react';
 import RSVP from './rsvp/rsvp.react';
 import Wedding from './wedding/wedding.react';
-import './app.less';
+import './../css/app.less';
 
-const { Component } = React;
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar />
-          <div className="main">
-            <Home />
-            <About />
-            <Wedding />
-            <RSVP />
-          </div>
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <div>
+      <Navbar />
+        <div className="main">
+          <Home {...props} />
+          <About {...props} />
+          <Wedding {...props} />
+          <RSVP {...props} />
+        </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

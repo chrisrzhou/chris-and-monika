@@ -1,35 +1,15 @@
 import React from 'react';
 
 import Anchor from './../shared/anchor.react';
+import Container from './../shared/container.react';
 import HomeHero from './home-hero.react';
-import LoremIpsum from './../shared/lorem-ipsum.react';
-import Section from './../shared/section.react';
-import './home.less';
 
-const Home = () => {
+const Home = (props) => {
   return (
-		<div className="container">
+    <Container>
       <Anchor id="home" />
-      <HomeHero />
-      <div className="parallax-content-left">
-        <Section>
-          <h2>Welcome</h2>
-          <LoremIpsum />
-        </Section>
-      </div>
-      <div className="parallax-content-right">
-        <Section>
-          <h2>Venue</h2>
-          <LoremIpsum />
-        </Section>
-      </div>
-      <div className="parallax-content-left">
-        <Section>
-          <h2>RSVP</h2>
-          <LoremIpsum />
-        </Section>
-      </div>
-    </div>
+      <HomeHero {...props} />
+    </Container>
   );
 };
 

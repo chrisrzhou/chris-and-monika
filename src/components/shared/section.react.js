@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
 
-import './shared.less';
-
 const Section = (props) => {
   const { style, children } = props;
   return (

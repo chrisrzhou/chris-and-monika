@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './navbar.less';
-
 const Navbar = () => {
   return (
     <nav role="navigation">
