@@ -1,31 +1,41 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import Anchor from './../shared/anchor.react';
+import Container from './../shared/container.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
-const RSVP = () => {
+const RSVP = (props) => {
+  const { rsvp, email } = props;
   return (
-		<div className="container">
-      <Anchor id="rsvp" />
-      <h1>RSVP Now</h1>
-      <Section>
-        <h2>Form</h2>
+    <Container
+      id="rsvp"
+      title="RSVP Now"
+      image={rsvp.imageHero}
+    >
+      <Section title="Form">
         <LoremIpsum />
       </Section>
-      <Section>
-        <h2>Contact Us</h2>
-        {'Email either '}
-        <a href="mailto:christopher.r.zhou@gmail.com" target="_top">
-          Chris
-        </a>
-        {' or '}
-        <a href="mailto:monikasun88@gmail.com" target="_top">
-          Monika
-        </a>
+      <Section title="Email Us">
+        <p>
+          {'You can also reach us via email: '}
+        </p>
+        <p>
+          <a href={email.chris} target="_top">
+            Chris
+          </a>
+          {' | '}
+          <a href={email.monika} target="_top">
+            Monika
+          </a>
+        </p>
       </Section>
-    </div>
+    </Container>
   );
+};
+
+RSVP.propTypes = {
+  rsvp: PropTypes.object.isRequired,
+  email: PropTypes.object.isRequired,
 };
 
 export default RSVP;

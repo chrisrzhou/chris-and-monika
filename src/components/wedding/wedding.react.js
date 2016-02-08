@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import Anchor from './../shared/anchor.react';
+import Container from './../shared/container.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
-const Wedding = () => {
+const Wedding = (props) => {
+  const { wedding } = props;
   return (
-		<div className="container">
-      <Anchor id="wedding" />
-      <h1>The Wedding</h1>
-      <Section>
-        <h2>Event Schedule</h2>
+    <Container
+      id="wedding"
+      title="The Wedding"
+      image={wedding.imageHero}
+    >
+      <Section title="Event Schedule">
         <LoremIpsum />
       </Section>
-      <Section>
-        <h2>Directions</h2>
+      <Section title="Directions">
         <LoremIpsum />
       </Section>
-      <Section>
-        <h2>About Rengstorff House</h2>
+      <Section title="About Rengstorff House">
         <LoremIpsum />
       </Section>
-    </div>
+    </Container>
   );
+};
+
+Wedding.propTypes = {
+  wedding: PropTypes.object.isRequired,
 };
 
 export default Wedding;

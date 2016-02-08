@@ -1,26 +1,32 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import Anchor from './../shared/anchor.react';
+import Container from './../shared/container.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
-export default () => {
+const About = (props) => {
+  const { about } = props;
   return (
-		<div className="container">
-      <Anchor id="about" />
-      <h1>About Us</h1>
-      <Section>
-        <h2>How We Met</h2>
+    <Container
+      id="about"
+      title="About Us"
+      image={about.imageHero}
+    >
+      <Section title="How We Met">
         <LoremIpsum />
       </Section>
-      <Section>
-        <h2>Proposal</h2>
+      <Section title="Propasal">
         <LoremIpsum />
       </Section>
-      <Section>
-        <h2>The Future</h2>
+      <Section title="What's Next?">
         <LoremIpsum />
       </Section>
-    </div>
+    </Container>
   );
 };
+
+About.propTypes = {
+  about: PropTypes.object.isRequired,
+};
+
+export default About;

@@ -17,6 +17,7 @@ Image.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
+  align: PropTypes.string.isRequired,
 };
 
 Image.defaultProps = {

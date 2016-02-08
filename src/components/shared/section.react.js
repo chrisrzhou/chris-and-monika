@@ -1,16 +1,17 @@
 import React, { PropTypes } from 'react';
 
 const Section = (props) => {
-  const { style, children } = props;
+  const { title, children } = props;
   return (
-    <section className="section" style={style}>
+    <section className="section">
+      <h3>{title}</h3>
       {children}
     </section>
   );
 };
 
 Section.propTypes = {
-  style: PropTypes.object,
+  title: PropTypes.string.isRequired,
   children: PropTypes.any,
 };
 
