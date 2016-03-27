@@ -1,17 +1,16 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 import Container from './../shared/container.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
 const Wedding = (props) => {
-  const { wedding } = props;
+  const {wedding} = props;
   return (
     <Container
       id="wedding"
       title="The Wedding"
-      image={wedding.imageHero}
-    >
+      image={wedding.imageHero}>
       <Section title="Event Schedule">
         <LoremIpsum />
       </Section>

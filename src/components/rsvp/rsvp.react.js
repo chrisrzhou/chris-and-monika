@@ -1,25 +1,25 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 import Container from './../shared/container.react';
-import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
 const RSVP = (props) => {
-  const { rsvp, email } = props;
+  const {rsvp, email} = props;
   return (
     <Container
       id="rsvp"
       title="RSVP Now"
-      image={rsvp.imageHero}
-    >
-      <Section title="Form">
-        <LoremIpsum />
-      </Section>
-      <Section title="Email Us">
+      image={rsvp.imageHero}>
+      <Section title="">
         <p>
-          {'You can also reach us via email: '}
+          Please follow the
+          <a href={rsvp.rsvpLink} target="_blank">
+            {` link `}
+          </a>
+          and RSVP by June 30!
         </p>
         <p>
+          {'You can also reach us via email: '}
           <a href={email.chris} target="_top">
             Chris
           </a>

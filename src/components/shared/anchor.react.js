@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 const Anchor = (props) => {
-  const { id } = props;
+  const {id} = props;
   return (
     <span
       className="anchor"

@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 const Section = (props) => {
-  const { title, children } = props;
+  const {title, children} = props;
   return (
     <section className="section">
-      <h3>{title}</h3>
+      <h3 className="section-title">
+        {title}
+      </h3>
       {children}
     </section>
   );

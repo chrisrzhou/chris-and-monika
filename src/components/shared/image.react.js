@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 const Image = (props) => {
-  const { src, width, height } = props;
+  const {src, width, height} = props;
   return (
     <div className="image">
       <img
@@ -17,7 +17,6 @@ Image.propTypes = {
   src: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
-  align: PropTypes.string.isRequired,
 };
 
 Image.defaultProps = {

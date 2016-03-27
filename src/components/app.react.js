@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 import 'font-awesome-webpack';
 
 import About from './about/about.react';
@@ -9,24 +9,26 @@ import RSVP from './rsvp/rsvp.react';
 import Wedding from './wedding/wedding.react';
 import './../css/app.less';
 
+
 const App = (props) => {
-  const { app } = props;
+  const {data} = props;
+  const {home, about, wedding, rsvp, email, github} = data;
   return (
     <div>
       <Navbar />
         <div className="main">
-          <Home home={app.home} />
-          <About about={app.about} />
-          <Wedding wedding={app.wedding} />
-          <RSVP rsvp={app.rsvp} email={app.email} />
+          <Home home={home} />
+          <About about={about} />
+          <Wedding wedding={wedding} />
+          <RSVP rsvp={rsvp} email={email} />
         </div>
-      <Footer github={app.github} />
+      <Footer github={github} />
     </div>
   );
 };
 
 App.propTypes = {
-  app: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default App;

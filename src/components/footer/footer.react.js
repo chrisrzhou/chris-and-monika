@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 const Footer = (props) => {
-  const { github } = props;
+  const {github} = props;
   return (
     <footer className="footer">
       <p>

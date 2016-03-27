@@ -1,17 +1,16 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 import Container from './../shared/container.react';
 import LoremIpsum from './../shared/lorem-ipsum.react';
 import Section from './../shared/section.react';
 
 const About = (props) => {
-  const { about } = props;
+  const {about} = props;
   return (
     <Container
       id="about"
       title="About Us"
-      image={about.imageHero}
-    >
+      image={about.imageHero}>
       <Section title="How We Met">
         <LoremIpsum />
       </Section>

@@ -1,10 +1,10 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 import App from '../components/app.react';
 
 const mapStateToProps = (state) => {
   return {
-    app: state.app,
+    data: state.reducer,
   };
 };
 
