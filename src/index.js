@@ -3,13 +3,13 @@ import React from 'react';
 import createStore from './store';
 import {render} from 'react-dom';
 
-import AppContainer from './containers/app.container.react';
+import App from './components/app.container.react';
 
 const store = createStore();
 
 const provider = (
   <Provider store={store} key="provider">
-    <AppContainer />
+    <App />
   </Provider>
 );
 

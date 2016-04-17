@@ -1,8 +1,14 @@
 import {combineReducers} from 'redux';
+import BRIDGE_TROUBLE from './../images/bridge_trouble.png';
+import HAPPY_ANGRY_PHOTO from './../images/happy_angry.png';
+import MAIN_COUPLE_PHOTO from './../images/main_couple.png';
+import MONKEY_KISS_PHOTO from './../images/monkey_kiss.png';
+import MONKEY_KISS_CARTOON_PHOTO from './../images/monkey_kiss_cartoon.jpg';
+import RING_PHOTO from './../images/ring.png';
 
 const INITIAL_STATE = {
   home: {
-    imageHero: 'http://inspiringpretty.com/wp-content/uploads/2013/05/lifting-up-bride(pp_w589_h391).jpg',
+    imageHero: `.${MAIN_COUPLE_PHOTO}`,
   },
   about: {
     imageHero: 'http://i305.photobucket.com/albums/nn221/tianarules/monkeyskissing.jpg',
