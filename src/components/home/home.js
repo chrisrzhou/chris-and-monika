@@ -1,14 +1,15 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
-import Container from './../shared/container.react';
-import Image from './../shared/image.react';
+import Container from './../shared/container';
+import Image from './../shared/image';
+import constants from './../../constants/constants';
 
-const Home = (props) => {
-  const {home} = props;
+const Home = () => {
+  const {images} = constants;
   return (
     <Container id="home">
       <div className="home-hero">
-        <Image src={home.imageHero} />
+        <Image src={images.mainCouple} />
         <h1 className="home-title">
           Chris and Monika
         </h1>
@@ -19,10 +20,6 @@ const Home = (props) => {
       </div>
     </Container>
   );
-};
-
-Home.propTypes = {
-  home: PropTypes.object.isRequired,
 };
 
 export default Home;

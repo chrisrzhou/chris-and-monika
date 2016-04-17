@@ -1,16 +1,17 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
-import Container from './../shared/container.react';
-import LoremIpsum from './../shared/lorem-ipsum.react';
-import Section from './../shared/section.react';
+import Container from './../shared/container';
+import LoremIpsum from './../shared/lorem-ipsum';
+import Section from './../shared/section';
+import constants from './../../constants/constants';
 
-const Wedding = (props) => {
-  const {wedding} = props;
+const Wedding = () => {
+  const {images} = constants;
   return (
     <Container
       id="wedding"
       title="The Wedding"
-      image={wedding.imageHero}>
+      image={images.monkeyKissCartoon}>
       <Section title="Event Schedule">
         <LoremIpsum />
       </Section>
@@ -22,10 +23,6 @@ const Wedding = (props) => {
       </Section>
     </Container>
   );
-};
-
-Wedding.propTypes = {
-  wedding: PropTypes.object.isRequired,
 };
 
 export default Wedding;

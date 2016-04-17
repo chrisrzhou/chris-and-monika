@@ -20,9 +20,7 @@
     "node": ">=0.10.0"
   },
   "keywords": [
-    "redux",
     "react",
-    "mongodb",
     "wedding",
     "chrisrzhou",
     "monikasun88"
@@ -55,8 +53,6 @@
     "font-awesome": "^4.5.0",
     "font-awesome-webpack": "0.0.4",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0",
-    "react-redux": "^4.0.5",
-    "redux": "^3.0.2"
+    "react-dom": "^0.14.0"
   }
 }

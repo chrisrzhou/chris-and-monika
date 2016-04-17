@@ -1,7 +1,9 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
-const Footer = (props) => {
-  const {github} = props;
+import constants from './../../constants/constants';
+
+const Footer = () => {
+  const {github} = constants;
   return (
     <footer className="footer">
       <p>
@@ -21,10 +23,6 @@ const Footer = (props) => {
       </p>
     </footer>
   );
-};
-
-Footer.propTypes = {
-  github: PropTypes.object.isRequired,
 };
 
 export default Footer;

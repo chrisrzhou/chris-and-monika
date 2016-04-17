@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 
-import Anchor from './../shared/anchor.react';
-import Image from './../shared/image.react';
+import Anchor from './../shared/anchor';
+import Image from './../shared/image';
 
 const Container = (props) => {
   const {id, title, image, children} = props;
