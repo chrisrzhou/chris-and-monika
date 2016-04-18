@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 
 const Image = (props) => {
-  const {src, href, width, height} = props;
+  const {src, href, alt, width, height} = props;
   if (href) {
     return (
       <div className="image">
@@ -10,6 +10,7 @@ const Image = (props) => {
             src={src}
             height={height}
             width={width}
+            alt={alt}
           />
         </a>
       </div>
@@ -21,6 +22,7 @@ const Image = (props) => {
         src={src}
         height={height}
         width={width}
+        alt={alt}
       />
     </div>
   );
@@ -31,6 +33,7 @@ Image.propTypes = {
   height: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
   href: PropTypes.string,
+  alt: PropTypes.string,
 };
 
 Image.defaultProps = {

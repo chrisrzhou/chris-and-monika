@@ -2,8 +2,9 @@ import React from 'react';
 
 import constants from './../../constants/constants';
 
+const {github, social} = constants;
+
 const Footer = () => {
-  const {github, social} = constants;
   return (
     <footer className="footer">
       <p>

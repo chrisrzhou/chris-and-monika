@@ -1,25 +1,36 @@
 import React from 'react';
 
+import Callout from './../shared/callout';
 import Container from './../shared/container';
-import LoremIpsum from './../shared/lorem-ipsum';
 import Section from './../shared/section';
-import constants from './../../constants/constants';
 
 const About = () => {
-  const {images} = constants;
   return (
     <Container
       id="about"
-      title="About Us"
-      image={images.monkeyKissCartoon}>
+      title="About Us">
       <Section title="How We Met">
-        <LoremIpsum />
+        <p>Monika met chris in college</p>
+        <Callout
+          person="chris"
+          message="asdfasdfds asdfsadfdsasdfasdfasdfsadfasdfasdfasdfasdfasd asldjfklaj kjasdlkfj kljasdklf jlkjsadklf jlksajdflkj lkasjldkf jklaj sdff"
+        />
+        <Callout
+          person="monika"
+          message="asdfasdfds asdfsadfdsasdfasdfasdfsadfasdfasdfasdfasdfasd asldjfklaj kjasdlkfj kljasdklf jlkjsadklf jlksajdflkj lkasjldkf jklaj sdff"
+        />
       </Section>
       <Section title="Propasal">
-        <LoremIpsum />
+        <Callout
+          person="monika"
+          message="asdfasdfds asdfsadfds"
+        />
       </Section>
       <Section title="What's Next?">
-        <LoremIpsum />
+        <Callout
+          person="chris"
+          message="asdfasdfds asdfsadfds"
+        />
       </Section>
     </Container>
   );

@@ -2,8 +2,9 @@ import React from 'react';
 
 import constants from './../../constants/constants';
 
+const {links} = constants;
+
 const Directions = () => {
-  const {links} = constants;
   return (
     <iframe
       width="600"

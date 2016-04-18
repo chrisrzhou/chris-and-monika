@@ -4,8 +4,9 @@ import Container from './../shared/container';
 import Image from './../shared/image';
 import constants from './../../constants/constants';
 
+const {images, links} = constants;
+
 const RSVP = () => {
-  const {images, links} = constants;
   return (
     <Container
       id="registry"

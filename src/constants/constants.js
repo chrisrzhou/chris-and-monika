@@ -1,5 +1,7 @@
 import AMAZON_REGISTRY from './../images/amazon_registry.jpg';
 import BRIDGE_TROUBLE from './../images/bridge_trouble.png';
+import CALLOUT_CHRIS from './../images/callout_chris.png';
+import CALLOUT_MONIKA from './../images/callout_monika.png';
 import HAPPY_ANGRY from './../images/happy_angry.png';
 import MAIN_COUPLE from './../images/main_couple.png';
 import MONKEY_KISS from './../images/monkey_kiss.png';
@@ -17,6 +19,8 @@ const constants = {
   images: {
     amazonRegistry: imageURL(AMAZON_REGISTRY),
     bridgeTrouble: imageURL(BRIDGE_TROUBLE),
+    calloutChris: imageURL(CALLOUT_CHRIS),
+    calloutMonika: imageURL(CALLOUT_MONIKA),
     happyAngry: imageURL(HAPPY_ANGRY),
     mainCouple: imageURL(MAIN_COUPLE),
     monkeyKiss: imageURL(MONKEY_KISS),

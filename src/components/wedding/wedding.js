@@ -6,8 +6,9 @@ import Image from './../shared/image';
 import Section from './../shared/section';
 import constants from './../../constants/constants';
 
+const {images, links} = constants;
+
 const Wedding = () => {
-  const {images, links} = constants;
   return (
     <Container
       id="wedding"

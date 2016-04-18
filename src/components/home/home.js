@@ -4,8 +4,9 @@ import Container from './../shared/container';
 import Image from './../shared/image';
 import constants from './../../constants/constants';
 
+const {images} = constants;
+
 const Home = () => {
-  const {images} = constants;
   return (
     <Container id="home">
       <div className="home-hero">
@@ -14,7 +15,7 @@ const Home = () => {
         </h1>
         <Image src={images.mainCouple} />
         <div className="home-subtitle">
-          <p>Rengstorff House, Mountain View, CA</p>
+          <p>The Rengstorff House, Mountain View, CA</p>
           <p>4.00pm September 30, 2016</p>
         </div>
       </div>

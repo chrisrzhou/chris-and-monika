@@ -53,3 +53,21 @@
 a:hover img {
   opacity: 0.6;
 }
+
+.callout {
+  display: flex;
+  margin: 20px;
+  .callout-person {
+    width: 100px;
+  }
+  .callout-message {
+    background: @color-white;
+    border: 1px solid @color-gray-dark;
+    border-radius: 5px;
+    color: @color-gray-dark;
+    flex-grow: 1;
+    font-style: italic;
+    margin: 6px;
+    padding: 10px;
+  }
+}

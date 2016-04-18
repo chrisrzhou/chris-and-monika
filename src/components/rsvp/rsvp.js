@@ -5,8 +5,9 @@ import Image from './../shared/image';
 import Section from './../shared/section';
 import constants from './../../constants/constants';
 
+const {images, emails, links, social} = constants;
+
 const RSVP = () => {
-  const {images, emails, links, social} = constants;
   return (
     <Container
       id="rsvp"
