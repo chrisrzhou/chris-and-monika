@@ -50,8 +50,6 @@
     "webpack-hot-middleware": "^2.4.1"
   },
   "dependencies": {
-    "font-awesome": "^4.5.0",
-    "font-awesome-webpack": "0.0.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   }

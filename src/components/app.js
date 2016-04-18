@@ -1,5 +1,4 @@
 import React from 'react';
-import 'font-awesome-webpack';
 
 import About from './about/about';
 import Footer from './footer/footer';
