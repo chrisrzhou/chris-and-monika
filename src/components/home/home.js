@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <Container id="home">
       <div className="home-hero">
-        <Image src={images.mainCouple} />
         <h1 className="home-title">
           Chris and Monika
         </h1>
+        <Image src={images.mainCouple} />
         <div className="home-subtitle">
           <p>Rengstorff House, Mountain View, CA</p>
           <p>4.00pm September 30, 2016</p>

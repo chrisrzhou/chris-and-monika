@@ -18,7 +18,10 @@ const Wedding = () => {
           <p>The Rengstorff House</p>
           <p>3070 N Shoreline Blvd, Mountain View, CA 94043</p>
         </div>
-        <Image src={images.rengstorffHouse} />
+        <Image
+          src={images.rengstorffHouse}
+          href={links.directions}
+        />
         <p>
           <label>Wedding Ceremony & Reception: </label>
           5:00pm
@@ -43,7 +46,10 @@ const Wedding = () => {
         <Directions />
       </Section>
       <Section title="About the Rengstorff House">
-        <Image src={images.rengstorffHouse2} />
+        <Image
+          src={images.rengstorffHouse2}
+          href={links.rengstorffHouse}
+        />
         <p>
           <a href={links.rengstorffHouse} target="_blank">
             The Rengstorff House
@@ -56,7 +62,10 @@ const Wedding = () => {
           recommend our family and friends to enjoy a nice Californian sunset
           walk before and after the wedding!
         </p>
-        <Image src={images.shorelinePark} />
+        <Image
+          src={images.shorelinePark}
+          href={links.shorelinePark}
+        />
         <p>
           <a href={links.shorelinePark} target="_blank">
           Shoreline Park

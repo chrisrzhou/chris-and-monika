@@ -3,16 +3,14 @@ import React from 'react';
 import constants from './../../constants/constants';
 
 const Footer = () => {
-  const {github} = constants;
+  const {github, social} = constants;
   return (
     <footer className="footer">
       <p>
         <a href={github.project} target="_blank">
-          <i className="fa fa-code"></i>
+          <i className="fa fa-heart"></i>
         </a>
-        {' with '}
-        <i className="fa fa-heart"></i>
-        {' by '}
+        {' from '}
         <a href={github.chris} target="_blank">
           @chrisrzhou
         </a>
@@ -20,6 +18,18 @@ const Footer = () => {
         <a href={github.monika} target="_blank">
           @monikasun88
         </a>
+      </p>
+      <p>
+        <a href={social.facebook} target="_blank">
+          <span className="fa-stack">
+            <i className="fa fa-square-o fa-stack-2x"></i>
+            <i className="fa fa-facebook fa-stack-1x"></i>
+          </span>
+        </a>
+        <span className="fa-stack">
+          <i className="fa fa-square-o fa-stack-2x"></i>
+          <i className="fa fa-instagram fa-stack-1x"></i>
+        </span>
       </p>
     </footer>
   );

@@ -1,34 +1,46 @@
 import React from 'react';
 
 import Container from './../shared/container';
+import Image from './../shared/image';
 import Section from './../shared/section';
 import constants from './../../constants/constants';
 
 const RSVP = () => {
-  const {images, emails, links} = constants;
+  const {images, emails, links, social} = constants;
   return (
     <Container
       id="rsvp"
-      title="RSVP Now"
-      image={images.monkeyKissCartoon}>
+      title="RSVP">
       <Section title="">
         <p>
           Please follow the
           <a href={links.rsvp} target="_blank">
             {` link `}
           </a>
-          and RSVP by June 30!
+          and RSVP by <strong>June 30</strong>!
+        </p>
+        <Image
+          src={images.ring}
+          href={links.rsvp}
+        />
+        <p>
+          Follow updates on our wedding event {' '}
+          <a href={social.facebook} target="_blank">
+            on Facebook
+          </a>
+          !
         </p>
         <p>
-          {'You can also reach us via email: '}
-          <a href={emails.chris} target="_top">
-            Chris
-          </a>
-          {' | '}
-          <a href={emails.monika} target="_top">
-            Monika
-          </a>
+          You can also contact us via email:
         </p>
+        <ul>
+          <li>
+            <a href={emails.chris} target="_top">Chris</a>
+          </li>
+          <li>
+            <a href={emails.monika} target="_top">Monika</a>
+          </li>
+        </ul>
       </Section>
     </Container>
   );

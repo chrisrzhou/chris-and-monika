@@ -16,6 +16,9 @@ const Navbar = () => {
         <li>
           <a href="#rsvp">RSVP</a>
         </li>
+        <li>
+          <a href="#registry">Registry</a>
+        </li>
       </ul>
     </nav>
   );
