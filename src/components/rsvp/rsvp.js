@@ -5,7 +5,7 @@ import Section from './../shared/section';
 import constants from './../../constants/constants';
 
 const RSVP = () => {
-  const {images, emails, rsvp} = constants;
+  const {images, emails, links} = constants;
   return (
     <Container
       id="rsvp"
@@ -14,7 +14,7 @@ const RSVP = () => {
       <Section title="">
         <p>
           Please follow the
-          <a href={rsvp.link} target="_blank">
+          <a href={links.rsvp} target="_blank">
             {` link `}
           </a>
           and RSVP by June 30!
