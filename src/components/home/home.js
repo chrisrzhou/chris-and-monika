@@ -16,7 +16,7 @@ const Home = () => {
         <Image src={images.mainCouple} />
         <div className="home-subtitle">
           <p>The Rengstorff House, Mountain View, CA</p>
-          <p>4.00pm September 30, 2016</p>
+          <p>Friday 5:00pm, September 30, 2016</p>
         </div>
       </div>
     </Container>

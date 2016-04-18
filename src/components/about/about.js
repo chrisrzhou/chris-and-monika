@@ -95,8 +95,9 @@ const About = () => {
             <li>being on the right frequency on life values :)</li>
           </ul>
           <p>
-            Occassionally Monika finds Chris annoying (picture below), but
-            their lives have been mostly happy moments than upsetting ones :)
+            Over their four years of living with each other, and going
+            through the rough and good times together, they realized they had
+            found in each other a partner for life.
           </p>
         </div>
         <Image src={images.happyAngry} />
