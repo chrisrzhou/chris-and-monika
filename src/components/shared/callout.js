@@ -26,7 +26,7 @@ const Callout = (props) => {
       <div className="callout-person">
         <Image
           src={imageURL}
-          width="50"
+          width="40"
         />
       </div>
       {chrisMessage}

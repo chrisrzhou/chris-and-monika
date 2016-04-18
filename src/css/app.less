@@ -7,6 +7,7 @@
 @import './navbar.less';
 @import './footer.less';
 @import './home.less';
+@import './about.less';
 
 html, body {
   color: @text-color;
@@ -23,7 +24,9 @@ a, .fa {
   color: @color-primary;
   text-decoration: none;
   &:hover {
-    color: @color-primary-dark;
+    background: @color-primary;
+    border-radius: 5px;
+    color: @color-white;
   }
 }
 
@@ -43,6 +46,12 @@ h2 {
 }
 h3 {
   font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
 }
 h4, h5 {
   color: @color-gray-dark;

@@ -26,13 +26,9 @@
   }
   .section-subtitle {
     color: @color-gray-dark;
-    font-size: 16px;
     font-weight: bold;
-    margin: 10px 0 30px 0;
+    line-height: 10px;
     text-align: center;
-    p {
-      margin: 5px;
-    }
   }
 }
 
@@ -56,18 +52,27 @@ a:hover img {
 
 .callout {
   display: flex;
-  margin: 20px;
+  margin: 20px auto;
+  width: 80%;
   .callout-person {
+    margin-top: -10px;
     width: 100px;
   }
   .callout-message {
     background: @color-white;
-    border: 1px solid @color-gray-dark;
-    border-radius: 5px;
+    border-radius: 10px;
     color: @color-gray-dark;
     flex-grow: 1;
+    font-size: 12px;
     font-style: italic;
-    margin: 6px;
+    height: 16px;
+    line-height: 16px;
     padding: 10px;
+    word-spacing: 4px;
+  }
+  .callout-message:hover {
+    background: @color-primary;
+    color: @color-white;
+    cursor: pointer;
   }
 }
