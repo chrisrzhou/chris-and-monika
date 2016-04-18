@@ -55,7 +55,7 @@ const Wedding = () => {
           <a href={links.rengstorffHouse} target="_blank">
             The Rengstorff House
           </a>
-          {' '} is one of Mountain View’s oldest house and finest examples of
+          {' '} is one of Mountain View's oldest house and finest examples of
           Victorian Italianate architecture on the West Coast.
         </p>
         <p>
