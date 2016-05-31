@@ -25,11 +25,8 @@ const RSVP = () => {
           href={links.rsvp}
         />
         <p>
-          Follow updates on our wedding event {' '}
-          <a href={social.facebook} target="_blank">
-            on Facebook
-          </a>
-          !
+          Follow updates on our wedding event on {' '}
+          <a href={social.facebook} target="_blank">Facebook</a>!
         </p>
         <p>
           You can also contact us via email:

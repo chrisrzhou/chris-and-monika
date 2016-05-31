@@ -7,6 +7,7 @@ import Section from './../shared/section';
 import constants from './../../constants/constants';
 
 const {images, links} = constants;
+const {hotels} = links;
 
 const Wedding = () => {
   return (
@@ -29,11 +30,14 @@ const Wedding = () => {
         </p>
         <p>
           <label>Buffet Dinner: </label>
-          7:00pm
+          6:30pm at {' '}
+          <a target="_blank" href={links.michaels}>
+            Michael's at Shoreline
+          </a>
         </p>
         <p>
-          <label>Cake (is not a lie!): </label>
-          7:30pm
+          <label>Cake cutting: </label>
+          Not a lie!
         </p>
         <p>
           <label>More Partying & Fun until 10:00pm!</label>
@@ -45,6 +49,46 @@ const Wedding = () => {
           <p>3070 N Shoreline Blvd, Mountain View, CA 94043</p>
         </div>
         <Directions />
+      </Section>
+      <Section title="Staying Overnight?">
+        <p>Recommended areas to stay over</p>
+        <ul>
+          <li>
+            <a target="_blank" href={hotels.zenHotel}>The Zen Hotel</a>
+          </li>
+          <li>
+            <a target="_blank" href={hotels.ramada}>Ramada Mountain View</a>
+          </li>
+          <li>
+            <a target="_blank" href={hotels.comfortInn}>Comfort Inn</a>
+          </li>
+        </ul>
+        <p>Also check out Google and Airbnb for cheaper and custom listings:</p>
+        <ul>
+          <li>
+            <a target="_blank" href={hotels.googleMaps}>Google</a>
+          </li>
+          <li>
+            <a target="_blank" href={hotels.airbnb}>Airbnb</a>
+          </li>
+        </ul>
+        <p>
+          There are many places to visit in Bay Area if you are planning
+          for an extended stay.  Here are some convenient places nearby for
+          food and dining:
+        </p>
+        <ul>
+          <li>
+            <a target="_blank" href={links.castro}>
+              Castro Street, Mountain View
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href={links.stanfordShopping}>
+              Stanford Shopping Center, Palo Alto
+            </a>
+          </li>
+        </ul>
       </Section>
       <Section title="About the Rengstorff House">
         <Image

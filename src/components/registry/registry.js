@@ -16,6 +16,9 @@ const RSVP = () => {
         href={links.amazonRegistry}
         width="200"
       />
+      <p className="text-center">
+        We greatly appreciate any gifts and contributions!
+      </p>
     </Container>
   );
 };
